@@ -24,42 +24,7 @@ const DashboardBody = () =>{
     const [currentPage, setCurrentPage] = useState(1)
         
     useEffect(() => {
-        getDashboardSummary()
-    }, [])
-
-    useEffect(() => {
-    setCurrentPage(1)
-    getAllReferralsData()
-}, [sortOrder, searchText])
-
-    const getAllReferralsData = async () => {
-    try {
-        const url = `https://v9fes04dwf.execute-api.eu-north-1.amazonaws.com/api/referrals?search=${searchText}&sort=${sortOrder}`
-
-        const token = Cookies.get('jwt_token')
-
-        const options = {
-            headers: {
-                Authorization: `Bearer ${token}`,
-            },
-        }
-
-        const response = await fetch(url, options)
-        const result = await response.json()
-        if (result.success) {
-            const {data} = result
-            const {referrals} = data
-            setReferralsDetails(referrals)
-            setCurrentStatus(apiStatus.success)
-        } else {
-            setCurrentStatus(apiStatus.failure)
-        }
-    } catch (error) {
-        setCurrentStatus(apiStatus.failure)
-    }
-}
-
-    const getDashboardSummary = async () => {
+            const getDashboardSummary = async () => {
     try {
         setCurrentStatus(apiStatus.inProgress)
 
@@ -95,6 +60,44 @@ const DashboardBody = () =>{
         setCurrentStatus(apiStatus.failure)
     }
 }
+        getDashboardSummary()
+    }, [])
+
+    useEffect(() => {
+    setCurrentPage(1)
+     const getAllReferralsData = async () => {
+    try {
+        const url = `https://v9fes04dwf.execute-api.eu-north-1.amazonaws.com/api/referrals?search=${searchText}&sort=${sortOrder}`
+
+        const token = Cookies.get('jwt_token')
+
+        const options = {
+            headers: {
+                Authorization: `Bearer ${token}`,
+            },
+        }
+
+        const response = await fetch(url, options)
+        const result = await response.json()
+        if (result.success) {
+            const {data} = result
+            const {referrals} = data
+            setReferralsDetails(referrals)
+            setCurrentStatus(apiStatus.success)
+        } else {
+            setCurrentStatus(apiStatus.failure)
+        }
+    } catch (error) {
+        setCurrentStatus(apiStatus.failure)
+    }
+}
+
+    getAllReferralsData()
+
+}, [sortOrder, searchText])
+
+   
+
 
     const lastIndex = currentPage * 10
     const firstIndex = lastIndex - 10

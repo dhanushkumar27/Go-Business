@@ -1,0 +1,42 @@
+
+.referral-page{
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+    background-color: aliceblue;
+}
+
+@media screen and (min-width:768px){
+    .referral-page{
+        padding:0px 50px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .referral-page{
+        padding:0px 200px;
+    }
+}
+
+.referral-details-container{
+    list-style-type: none;
+    padding-left: 0px;
+    height:200px;
+    width:300px;
+    background-color: white;
+    border-radius: 8px;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.referral-details-item{
+    font-weight: bold;
+}
+
+.referral-details-span{
+    font-weight: normal;
+    margin-left:10px;
+}

@@ -4,4 +4,17 @@
     flex-direction: column;
     justify-content: space-between;
     padding:10px;
+    background-color: aliceblue;
+}
+
+@media screen and (min-width:768px){
+    .dashboard-page{
+        padding:0px 50px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .dashboard-page{
+        padding:0px 200px;
+    }
 }

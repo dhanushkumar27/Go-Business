@@ -10,7 +10,6 @@ const Login = (props) =>{
     const [password,setPassword] = useState("")
     const [showError,setShowError] = useState(false)
     const [errorText,setErrorText] = useState("")
-    console.log(navigate)
     const onSubmitForm = async (event) =>{
         event.preventDefault()
         const url = "https://v9fes04dwf.execute-api.eu-north-1.amazonaws.com/api/auth/signin"

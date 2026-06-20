@@ -1,10 +1,10 @@
-
-
 .header-contaniner{
     display:flex;
     justify-content: space-between;
     align-items: center;
     padding:10px 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header-heading{
@@ -34,4 +34,23 @@
     color:brown;
     background-color: transparent;
     font-weight: bold;
+}
+@media screen and (min-width:1200px){
+    .header-contaniner{
+    padding:20px 20px;
+}
+.header-tryForFree-button{
+    margin:0px;
+    
+    border-radius: 12px;
+    padding:8px;
+    
+}
+.header-logout-button{
+    margin:0px;
+    margin-left:10px;
+    border-radius: 12px;
+    padding:8px;
+    
+}
 }

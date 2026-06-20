@@ -1,0 +1,15 @@
+
+.referal-item{
+    display:flex;
+    padding:10px;
+    border:1px solid black;
+}
+
+.referal-item-text{
+    width:25%;
+    margin:0px;
+}
+.referral-link-item{
+    color:black;
+    text-decoration: none;
+}

@@ -1,0 +1,27 @@
+
+.service-summery-unorder-list-container{
+    list-style-type: none;
+    padding-left:0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.service-summery-list-item{
+    width:24%;
+    height: 100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin:5px 0px;
+    border-radius:8px;
+    background-color: azure;
+    padding:5px;
+}
+
+.service-summery-heading{
+    font-size:16px;
+}
+
+.service-summery-para{
+    font-size: 12px;
+}

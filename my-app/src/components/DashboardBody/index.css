@@ -9,7 +9,180 @@
 .dashboard-heading{
     font-size:24px;
     font-weight: bold;
+    margin-top:50px;
 }
 .dashboard-para{
-    font-size:10px;
+    font-size:12px;
+    margin-bottom:50px;
+}
+@media screen and (min-width:1200px){
+    .dashboard-heading{
+    font-size:32px;
+    }
+    .dashboard-para{
+    font-size:18px;
+}
+}
+
+/*overview-card*/
+
+.overview-card{
+    background-color: #ffffff;
+    padding:15px;
+    margin:10px 0px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.overview-heading{
+    font-size: 18px;
+}
+.metrics-unorder-list-container{
+    list-style-type: none;
+    padding-left:0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width:1200px){
+
+.overview-card{
+
+    padding:15px 25px;
+    margin:20px 0px;
+    border-radius: 8px;
+}
+.overview-heading{
+    font-size: 24px;
+}
+
+}
+/*service-summery-card*/ 
+
+.service-summery-card{
+    background-color: #ffffff;
+    padding:10px;
+    margin:10px 0px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and (min-width:1200px){
+
+.service-summery-card{
+    padding:15px 25px;
+    margin:20px 0px;
+    border-radius: 8px;
+}
+}
+
+
+/*Referrals container*/
+.allReferrals-container{
+    display:flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.allReferrals-header-container{
+    padding:10px 20px;
+   
+}
+.allReferrals-heading{
+    font-size:26px;
+}
+
+@media screen and (min-width:1200px){
+    .search-and-sort-container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.search-label{
+    margin-right:10px;
+}
+
+.search-input{
+    padding:6px;
+    border-radius:6px;
+    border:1px solid black;
+    outline: none;
+}
+
+.sort-label{
+    margin-right:10px;
+}
+
+.sort-select{
+    padding:5px;
+    border-radius: 6px;
+}
+.sort-option{
+    padding:5px;
+}
+
+
+.referrals-unorder-list-container{
+    display: flex;
+    flex-direction: column;
+    list-style-type:none;
+    padding-left:0px;
+    padding:20px;
+}
+
+.referrals-header-listItem-text{
+    font-weight: bold;
+}
+
+.referrals-header-listItem{
+    display: flex;
+    padding:10px;
+    border:1px solid black;
+}
+.referrals-header-listItem-text{
+    width:25%;
+    margin:0px;
+}
+
+@media screen and (min-width:1200px){
+    .allReferrals-footer-container{
+        padding:10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
+}
+.pageNumbers-container{
+    display:flex;
+}
+.pageNumber-button{
+    color:white;
+    background-color: blue;
+    padding:8px;
+    border-radius: 6px;
+    margin:0px 5px;
+    border:none;
+}
+.previous-button{
+    padding:8px;
+    border:none;
+    background-color: #ffffff;
+    border:1px solid black;
+    border-radius: 8px;
+    margin-right:10px;
+}
+
+.next-button{
+    padding:8px;
+    border:none;
+    background-color: #ffffff;
+    border:1px solid black;
+    border-radius: 8px;
+    margin-left:10px;
 }

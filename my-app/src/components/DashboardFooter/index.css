@@ -1,7 +1,7 @@
 .footer-container{
     display: flex;
     flex-direction: column;
-
+    margin-bottom: 20px;
 }
 
 .footer-unorder-container{

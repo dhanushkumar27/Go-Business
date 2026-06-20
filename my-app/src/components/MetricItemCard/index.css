@@ -1,0 +1,19 @@
+
+.metric-item{
+    width:24%;
+    height: 130px;
+    padding:5px;
+    border-radius: 6px;
+    background-color: #D0CCD8;
+    margin:5px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.metric-item p{
+    font-size: 12px;
+    margin:0px;
+    font-weight: 600;
+}

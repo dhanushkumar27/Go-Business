@@ -20,10 +20,7 @@ const Referral = () =>{
     const {id} = useParams()
 
     useEffect(() => {
-        getReferralsData()
-    }, [])
-
-    const getReferralsData = async () => {
+         const getReferralsData = async () => {
         setCurrentState(apiStatus.inProgress)
         const url = `https://v9fes04dwf.execute-api.eu-north-1.amazonaws.com/api/referrals?id=${id}`
         const token = Cookies.get('jwt_token')
@@ -44,6 +41,11 @@ const Referral = () =>{
             setCurrentState(apiStatus.failure)
         }
     }
+        getReferralsData()
+        
+    }, [id])
+
+   
 
 
 

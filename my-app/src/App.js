@@ -4,7 +4,7 @@ import LoginWrapper from './components/LoginWrapper'
 import ProtectedRoute from './components/ProtectedRoute'
 import Dashboard from './pages/Dashboard'
 import Referral from './pages/Referral'
-import NotFound from './pages/NotFound'
+import NotFound from './pages/notFound'
 
 import './App.css';
 
